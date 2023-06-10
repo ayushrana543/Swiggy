@@ -49,7 +49,7 @@ class MyUser(AbstractBaseUser):
     otp=models.IntegerField(max_length=6,null=True,blank=True)
     otp_verify = models.DateField(null=  True, blank=True)
     otp_verify= models.BooleanField(default=False)
-    otp_expire = models.DateField(null=  True, blank=True)
+    otp_expire = models.DateTimeField(null=  True, blank=True)
     USER_TYPE=(
         (1,'Restaurent'),
         (2,'Customer'),
